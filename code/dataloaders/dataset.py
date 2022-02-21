@@ -95,16 +95,6 @@ class TransformTwice:
         out2 = self.transform(inp)
         return out1, out2
 
-class TransformThird:
-    def __init__(self, transform,transform2):
-        self.transform = transform
-        self.transform2 = transform2
-
-    def __call__(self, inp):
-        out1 = self.transform(inp)
-        out2 = self.transform2(inp)
-        return out1, out2
-
 def iterate_once(iterable):
     return np.random.permutation(iterable)
 
