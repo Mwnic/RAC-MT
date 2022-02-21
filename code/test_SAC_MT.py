@@ -43,7 +43,7 @@ parser.add_argument('--deterministic', type=int, default=1, help='whether use de
 parser.add_argument('--seed', type=int, default=1337, help='random seed')
 parser.add_argument('--gpu', type=str, default='0', help='GPU to use')
 ### tune
-parser.add_argument('--resume', type=str, default='../model/xxxx/best_result.pth', help='model to resume')
+parser.add_argument('--resume', type=str, default='../result.pth', help='model to resume')
 # parser.add_argument('--resume', type=str,  default=None, help='GPU to use')
 parser.add_argument('--start_epoch', type=int, default=0, help='start_epoch')
 parser.add_argument('--global_step', type=int, default=0, help='global_step')
